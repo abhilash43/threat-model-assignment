@@ -51,12 +51,12 @@
           },
           {
             "position": {
-              "x": 295,
+              "x": 294.9999999999998,
               "y": -1415
             },
             "size": {
               "width": 300,
-              "height": 200
+              "height": 180
             },
             "attrs": {
               "label": {
@@ -79,13 +79,6 @@
               "containedElements": [
                 "2bc9b7d1-599a-4661-95e4-a9ef40e9bbcc"
               ]
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -483,11 +476,37 @@
                   "new": false,
                   "number": 1,
                   "score": ""
+                },
+                {
+                  "id": "7a8fb1fc-035d-428d-b746-0cfa7930aa32",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 2,
+                  "score": ""
+                },
+                {
+                  "id": "d624298a-0dc1-472f-9c10-7d5acd02ab00",
+                  "title": "API Request Manipulation",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "An attacker could modify or manipulate API requests sent to the web application \nto alter system behavior or gain unauthorized access to data.",
+                  "mitigation": "Implement server-side input validation, use HTTPS encryption, \nand apply request integrity checks to prevent request tampering.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "spoofing": 1,
-                "tampering": 0,
+                "tampering": 1,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
@@ -496,7 +515,16 @@
             },
             "children": [
               "ee238edb-d554-4bef-a069-eb483affe682"
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            }
           },
           {
             "position": {
@@ -1184,12 +1212,59 @@
                 "y": -1200
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "77fef130-ccd4-48de-8513-e25e839a610b",
+            "source": {
+              "cell": "bf59d070-1953-4fe7-99c9-328873554a37",
+              "port": "fa23c480-852b-4c32-82d1-ce90d2eab9c7"
+            },
+            "target": {
+              "x": 120,
+              "y": -630
+            },
+            "vertices": []
           }
         ]
       }
     ],
     "diagramTop": 1,
     "reviewer": "Professor",
-    "threatTop": 1
+    "threatTop": 3
   }
 }
