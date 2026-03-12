@@ -1,0 +1,26 @@
+{
+  "version": "2.6.0",
+  "summary": {
+    "title": "Web Application Threat Model",
+    "owner": "Abhilash Tarigopula",
+    "description": "This threat model describes the security architecture of a web application system. \nThe system includes a human user accessing the web application through HTTPS. \nThe web application communicates with backend services that process requests \nand interact with a SQL database and file storage system. \n\nThe model identifies potential security threats using the STRIDE methodology \nand proposes mitigations to protect system components and data flows.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "New STRIDE diagram",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.0",
+        "cells": []
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "Professor",
+    "threatTop": 0
+  }
+}
